@@ -1,0 +1,47 @@
+.product img{
+    /* width:100%;
+    height:100%; */
+    width:286px;
+    height:286px;
+    margin: 8px;
+    border-radius: 8px;
+
+}
+.product{
+    width:300px;
+    height:510px;
+    border: 1px solid #95A0A7;
+    position:relative;
+
+}
+.product-name{
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-left:14px;
+    
+}
+.product-price{
+    margin-top:10px;
+    margin-left:14px;
+}
+.rating-manufac{
+    margin-left:14px;
+    margin-top:45px;
+}
+.rating{
+    margin:0px;
+}
+.manufac{
+    margin-top:10px;
+}
+.btn-add-to-cart{
+        background: #FFE0B3;
+        border: 1px solid #95A0A7;
+        border-radius: 0px 0px 8px 8px;
+        width:100%;
+        position: absolute;
+        bottom: 0px;
+}
+.btn-add-to-cart:hover{
+    background-color: orange;
+}
