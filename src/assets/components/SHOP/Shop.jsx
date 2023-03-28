@@ -36,6 +36,20 @@ const Shop = () => {
 
   const handleAddToCart = (product) => {
     const newCart = [...cart, product];
+    //spread operator dia copy kora line er poriborte amra onno babe o korte pari.jmn:
+    // let newCart = [];
+    // const exists = cart.find(pd => pd.id === product.id);
+    // if (!exists) {
+    //   product.quantity = 1;
+    //   newCart = [...cart, product]
+    // }
+    // else {
+    //   exists.quantity = exists.quantity + 1;
+    //   const remaining = cart.filter(pd => pd.id !== product.id);
+    //   newCart = [...remaining, exists]
+    // }
+    //if product does not exist in the cart,then set quantity=1;
+    //if exist update quantity by 1;
     setCart(newCart);
     addToDb(product.id)
 

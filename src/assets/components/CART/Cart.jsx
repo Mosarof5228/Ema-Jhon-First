@@ -8,9 +8,12 @@ const Cart = (props) => {
     console.log(cart)
     let totalPrice = 0;
     let totalShipping = 0;
+    let quantity = 0;
     for (const product of cart) {
-        totalPrice = totalPrice + product.price;
+        product.quantity = product.quantity || 1;
+        totalPrice = totalPrice + product.price * product.quantity;
         totalShipping = totalShipping + product.shipping;
+        quantity = quantity + product.quantity;
     }
     const tex = totalPrice * 7 / 100;
 
@@ -19,7 +22,7 @@ const Cart = (props) => {
     return (
         <div className='cart'>
             <h4>Order Summary</h4>
-            <h4>Selected Items: {cart.length} </h4>
+            <h4>Selected Items: {quantity} </h4>
             <p>Total Price: ${totalPrice}</p>
             <p>Total Shipping: {totalShipping}</p>
             <p>Tax: {tex.toFixed(2)}</p>
