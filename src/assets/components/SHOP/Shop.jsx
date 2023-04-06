@@ -14,10 +14,11 @@ const Shop = () => {
       .then(data => setProducts(data))
   }, [])
   useEffect(() => {
+    //step-1 : get id from local storage object.
     const storedCart = getShoppingCart();
     //step-4:
     const savedCart = [];
-    //step-1 : get id from local storage object.
+
     for (const id in storedCart) {
       //step-2 : get product by use id from products array of object
       const addedProduct = products.find(product => product.id === id)
