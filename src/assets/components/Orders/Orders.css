@@ -1,3 +1,10 @@
-.reviews-container{
-    margin:30px auto;
+.reviews-container {
+  margin: 30px auto;
+}
+.btn-proceed {
+  width: 90%;
+  background: #ff9900;
+  border-radius: 4px;
+  color: white;
+  margin-top: 10px;
 }
