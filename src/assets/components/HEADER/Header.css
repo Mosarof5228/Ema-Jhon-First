@@ -8,6 +8,7 @@
 }
 .items {
   display: flex;
+  align-items: center;
   gap: 10px;
   color: white;
 }
@@ -18,4 +19,8 @@
 }
 .items a:hover {
   color: green;
+}
+.signout-btn {
+  padding: 3px 4px;
+  margin: 0 2px;
 }
